@@ -6,3 +6,14 @@ plugins {
     id("maven-publish")
 }
 
+buildscript {
+    repositories {
+        google()
+        maven("https://jitpack.io")
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:7.0.4")
+    }
+}
